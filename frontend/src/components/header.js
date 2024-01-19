@@ -12,7 +12,7 @@ export default function Header() {
    };
 
     const logout = () => {}
-    
+
     return (
         <header className={classes.header}>
             <div className={classes.container}>
@@ -34,6 +34,13 @@ export default function Header() {
                             ) : (
                             <Link to="/login">Login</Link>
                         )}
+
+                        <li>
+                            <Link to="/cart">
+                                Cart 
+                                {cart.totalCount > 0 && <span className={classes.cart_count}>{cart.totalCount}</span>}
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
 
