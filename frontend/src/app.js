@@ -8,8 +8,8 @@ function App() {
     <>
         <Header/>
         <AppRoutes />
-    </>
-    )
+    </> 
+    );
 }
 
 export default App;
