@@ -1,9 +1,12 @@
 import React, { useReducer } from "react";
+import { getAll } from "../services/shoeService";
+import { useEffect  } from "react";
+import Thumbnails from "../components/thumbnails";
 
 const initialState = { shoes: [] };
 
 const reducer = (state, action) => {
-    switch(action.type){
+    switch (action.type){
         case'SHOES_LOADED':
             return{...state, shoes: action.payload };
         default:
@@ -17,5 +20,7 @@ export default function HomePage() {
     useEffect(() => {
         getAll().then(foods => dispatch ({ type: 'SHOES_LOADED', payload: foods }))
     }, [])
-    return <div>HomePage</div>
+    return <>
+    <Thumbnails shoes={shoes}/>
+    </>;
 }
