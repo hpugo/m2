@@ -4,7 +4,7 @@ export const sample_shoes = [
         name: 'Jordan 4 Military Black',
         size: 10,
         price: 450,
-        imageUrl: 'military.jpeg',
+        imageUrl: 'military4.jpeg',
         condition: 'new',
     },
     {
