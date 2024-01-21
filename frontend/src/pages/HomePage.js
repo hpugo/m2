@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
-import { getAll } from "../services/shoeService";
+import { getAll } from "../services/ShoeService";
 import { useEffect  } from "react";
-import Thumbnails from "../components/thumbnails";
+import Thumbnails from "../components/Thumbnails";
 
 const initialState = { shoes: [] };
 

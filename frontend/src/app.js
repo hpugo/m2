@@ -1,5 +1,5 @@
 import AppRoutes from "./AppRoutes";
-import Header from "./components/header";
+import Header from "./components/Header";
 
 
 
